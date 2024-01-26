@@ -21,6 +21,6 @@ spring:
         format_sql: true #띄어쓰기 8칸
 
 logging:
-  org.hibernate.SQL: debug #띄어쓰기 2칸
   level:
+    org.hibernate.SQL: debug #띄어쓰기 2칸
     org.hibernate.orm.jdbc.bind: trace

@@ -1,0 +1,25 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings: 
+        web-allow-others: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+#        show_sql: true #띄어쓰기 8칸
+        format_sql: true #띄어쓰기 8칸
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.orm.jdbc.bind: trace
